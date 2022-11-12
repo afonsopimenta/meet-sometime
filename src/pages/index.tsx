@@ -1,7 +1,6 @@
 import Head from 'next/head';
-import Image from 'next/image';
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
@@ -14,9 +13,13 @@ export default function Home() {
       </Head>
 
       <main className='h-screen flex flex-col justify-center items-center gap-3 md:gap-6 text-center'>
-        <h1 className='text-4xl md:text-6xl font-bold text-white'>Meet Sometime</h1>
+        <h1 className='text-4xl md:text-6xl font-bold text-white'>
+          Meet Sometime
+        </h1>
         <p className='text-md md:text-xl'>Coming Soon...</p>
       </main>
     </>
   );
-}
+};
+
+export default Home;
